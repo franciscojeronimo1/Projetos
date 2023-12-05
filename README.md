@@ -8,3 +8,6 @@ Piano - Para ouvir o som do piano, desative o AdBlock 🅱.
 
 Busca por Pokémon
 ## https://franciscojeronimo1.github.io/Projetos/pokemon
+
+Landing Page 
+## https://franciscojeronimo1.github.io/Projetos/Landing-Page2/
