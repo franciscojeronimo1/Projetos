@@ -15,11 +15,12 @@ body {
 header {
     position: fixed;
     left: 50%;
+    width: 80vw;
     transform: translateX(-50%);
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 600px;
-    gap: 10%;
+    gap: 100px;
 
     & img {
         width: 250px;
