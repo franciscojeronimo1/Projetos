@@ -33,6 +33,13 @@ header {
         & ul {
             display: grid;
             grid-template-columns: repeat(3, 200px);
+            cursor: pointer;
+
+
+        & a {
+            text-decoration: none;
+            color: white;
+        }
         }
     }
 
