@@ -45,4 +45,15 @@ export const Product = styled.div `
     margin-top: 15px;
     padding: 0 10px;
 
+    p {
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+
+`
+export const TrashButton = styled.button `
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
 `
