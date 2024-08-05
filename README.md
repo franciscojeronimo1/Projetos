@@ -13,6 +13,6 @@ Jogo da Cobrinha
 
 ## https://franciscojeronimo1.github.io/Projetos/cobrinha
 
-Linktree
+Linketree
 
-## https://franciscojeronimo1.github.io/Projetos/linktree
+## https://franciscojeronimo1.github.io/Projetos/linketree
