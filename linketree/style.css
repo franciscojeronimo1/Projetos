@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    max-width: 80;
+    animation: backgroundAnimation 10s infinite; /* Aplica a animação de mudança de cor */
+}
+
+.profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #121212;
+}
+
+.sub-title {
+    margin-bottom: 50px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-decoration: none;
+    background-color: #121212;
+
+    p {
+        color: #fff;
+    }
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #ff0000; /* Vermelho */
+    }
+    25% {
+        background-color: #00ff00a8; /* Verde */
+    }
+    50% {
+        background-color: #0000ff; /* Azul */
+    }
+    75% {
+        background-color: #c7d82b; /* Rosa */
+    }
+    100% {
+        background-color: #ff0000; /* Volta ao Vermelho */
+    }
+}
