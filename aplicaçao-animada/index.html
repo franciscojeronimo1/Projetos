@@ -8,14 +8,34 @@
 </head>
 <body>
     <main>
-        <div>
-            <div>Morango</div>
-            <img src="img/Morango-refrigerante-foregroundBlur.png" alt="">
-            <img src="img/Morango-refrigerante.png" alt="">
+        <div class="item active" style="--background: #EA3D41">
+            <div class="title">Morango</div>
+            <img src="img/Morango-refrigerante-foregroundBlur.png" alt="" class="fruit">
+            <img src="img/Morango-refrigerante.png" alt="" class="refri">
         </div>
+
+        <div class="item" style="--background: #2D5643">
+            <div class="title">Abacate</div>
+            <img src="img/Abacate-refrigerante-foregroundBlur.png" style="--background: #2D5643" class="fruit">
+            <img src="img/Abacate-refrigerante.png" alt="" class="refri">
+        </div>
+
+        <div class="item" style="--background: #E7A043">
+            <div class="title">Laranja</div>
+            <img src="img/Laranja-refrigerante-foregroundBlur.png"  class="fruit">
+            <img src="img/Laranja-refrigerante.png" alt="" class="refri">
+        </div>
+
+        <div class="arrow">
+            <button id="prev"> < </button>
+            <button id="next">></button>
+        </div>
+        
+
     </main>
 
 
-    <script src="script.js"></script>
+
 </body>
+<script src="script.js"></script>
 </html>
