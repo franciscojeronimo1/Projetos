@@ -1,6 +1,6 @@
 
 To-Do-List.
-## https://franciscojeronimo1.github.io/Projetos/piano/](https://franciscojeronimo1.github.io/Projetos/lista-de-tarefas/lista-tarefas/
+## https://franciscojeronimo1.github.io/Projetos/lista-de-tarefas/lista-tarefas/
 
 Piano - Para ouvir o som do piano, desative o AdBlock 🅱.
 ## https://franciscojeronimo1.github.io/Projetos/piano/
