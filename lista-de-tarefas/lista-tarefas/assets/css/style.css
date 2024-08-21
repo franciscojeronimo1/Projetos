@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 
 :root {
   --primary-color: rgb(17, 86, 102);
@@ -18,7 +18,7 @@ body {
   height: 40vw;
   max-height: 100%;
   width: 100%;
-  background-image: url('../img/background.jpg');
+  background-image: url("../img/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,7 +26,7 @@ body {
   background-color: #6e111f;
   margin: 0;
   padding: 0;
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
 }
@@ -39,7 +39,6 @@ body {
   border-radius: 10px;
   color: #fff;
 }
-
 
 .input-tarefa {
   padding: 10px;
@@ -54,8 +53,6 @@ body {
   font-weight: 500;
   font-family: inherit;
   transition: transform 0.3s ease;
-  
-
 }
 
 .input-tarefa:hover {
@@ -91,12 +88,11 @@ ul {
   text-transform: capitalize;
   display: block;
   flex-direction: column;
- 
 
   li {
     display: flex;
     justify-content: space-between;
-    padding: 5px ;
+    padding: 5px;
     color: #41e269;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
@@ -109,12 +105,11 @@ ul {
       font-weight: bold;
       font-family: inherit;
       transition: transform 0.3s ease;
-    } :hover {
+    }
+    :hover {
       cursor: pointer;
       background-color: #e93b3ecb;
       transform: scale(1.1);
     }
-
-
   }
 }
