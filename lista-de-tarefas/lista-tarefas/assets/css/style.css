@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
 :root {
   --primary-color: rgb(17, 86, 102);
   --primary-color-darker: rgb(9, 48, 56);
@@ -14,7 +15,7 @@ h1 {
 }
 
 body {
-  height:40vw;
+  height: 40vw;
   max-height: 100%;
   width: 100%;
   background-image: url('../img/background.jpg');
@@ -53,14 +54,15 @@ body {
   font-weight: 500;
   font-family: inherit;
   transition: transform 0.3s ease;
- 
+  
+
 }
 
 .input-tarefa:hover {
-  transform: scaleY(1.1); 
+  transform: scaleY(1.1);
 }
 
-/* From Uiverse.io by mrhyddenn */ 
+/* From Uiverse.io by mrhyddenn */
 .btn-tarefa {
   width: 100px;
   height: 50px;
@@ -76,6 +78,43 @@ body {
 
 .btn-tarefa:hover {
   cursor: pointer;
-  background-color:#ffffff70 ;
-  transform: scale(1.1); 
+  background-color: #ffffff70;
+  transform: scale(1.1);
+}
+
+ul {
+  background-color: rgba(0, 0, 0, 0.342);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+  list-style: none;
+  text-transform: capitalize;
+  display: block;
+  flex-direction: column;
+ 
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px ;
+    color: #41e269;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    button {
+      border: 1px solid #a81919dc;
+      background: #b22d31;
+      border-radius: 25px;
+      overflow: hidden;
+      position: relative;
+      font-weight: bold;
+      font-family: inherit;
+      transition: transform 0.3s ease;
+    } :hover {
+      cursor: pointer;
+      background-color: #e93b3ecb;
+      transform: scale(1.1);
+    }
+
+
+  }
 }

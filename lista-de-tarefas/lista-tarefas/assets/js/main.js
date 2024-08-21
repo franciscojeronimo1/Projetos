@@ -23,10 +23,10 @@ function limpaInput() {
 function criaBotaoApagar(li) {
     li.innerText += '  '
     const botaoApagar = document.createElement('button')
-    botaoApagar.innerText = 'Apagar'
+    botaoApagar.innerText = 'Finished'
     li.appendChild(botaoApagar)
     botaoApagar.setAttribute('class', 'apagar')
-    botaoApagar.setAttribute('title', 'apagar esta tarefa')
+    botaoApagar.setAttribute('title', 'task completed')
 }
 
 function criaTarefa(textoInput) {
@@ -59,7 +59,7 @@ function salvarTarefas() {
 
     for (let tarefa of liTarefas) {
         let tarefaTexto = tarefa.innerText
-        tarefaTexto = tarefaTexto.replace('Apagar', '').trim()
+        tarefaTexto = tarefaTexto.replace('Finished', '').trim()
         listaDeTarefas.push(tarefaTexto)
     }
     const tarefasJSON = JSON.stringify(listaDeTarefas)
