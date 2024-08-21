@@ -9,10 +9,22 @@
   outline: 0;
 }
 
+h1 {
+  text-align: center;
+}
+
 body {
+  height:40vw;
+  max-height: 100%;
+  width: 100%;
+  background-image: url('../img/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  background-color: #6e111f;
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
@@ -21,47 +33,49 @@ body {
 .container {
   max-width: 640px;
   margin: 50px auto;
-  background: #fff;
+  background-color: rgba(0, 0, 0, 0.616);
   padding: 20px;
   border-radius: 10px;
-}
-
-form input, form label, form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-form input {
-  font-size: 24px;
-  height: 50px;
-  padding: 0 20px;
-}
-
-form input:focus {
-  outline: 1px solid var(--primary-color);
-}
-
-form button {
-  border: none;
-  background: var(--primary-color);
   color: #fff;
-  font-size: 18px;
-  font-weight: 700;
+}
+
+
+.input-tarefa {
+  padding: 10px;
+  width: 350px;
   height: 50px;
+  border: 1px solid #cdcdcd;
+  background: #ddd1d1;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  font-weight: 500;
+  font-family: inherit;
+  transition: transform 0.3s ease;
+ 
+}
+
+.input-tarefa:hover {
+  transform: scaleY(1.1); 
+}
+
+/* From Uiverse.io by mrhyddenn */ 
+.btn-tarefa {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #cdcdcd;
+  background: #ddd1d1;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  font-weight: bold;
+  font-family: inherit;
+  transition: transform 0.3s ease;
+}
+
+.btn-tarefa:hover {
   cursor: pointer;
-  margin-top: 30px;
-}
-
-form button:hover {
-  background: var(--primary-color-darker);
-}
-
-.paragrafo-resultado, .bad {
-  background: #4dff6a;
-  padding: 10px 20px;
-}
-
-.bad {
-  background: #ff2a2a;
+  background-color:#ffffff70 ;
+  transform: scale(1.1); 
 }
