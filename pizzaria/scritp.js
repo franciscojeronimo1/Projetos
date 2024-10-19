@@ -175,7 +175,7 @@ checkoutBtn.addEventListener("click", function () {
     return `${item.name} (Qtd: ${item.quantity}) - R$ ${(item.price * item.quantity).toFixed(2)}`;
   }).join("\n");
 
-  /* if (!isOpen) {
+   if (!isOpen) {
     Toastify({
       text: "Ops o restaurante está fechado!",
       duration: 3000,
@@ -188,7 +188,7 @@ checkoutBtn.addEventListener("click", function () {
       },
     }).showToast()
     return;
-  } */
+  } 
 
   if (cart.length === 0) return;
   if (addressInput.value === "") {
