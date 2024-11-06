@@ -175,20 +175,20 @@ checkoutBtn.addEventListener("click", function () {
     return `${item.name} (Qtd: ${item.quantity}) - R$ ${(item.price * item.quantity).toFixed(2)}`;
   }).join("\n");
 
-  /* if (!isOpen) {
-      Toastify({
-        text: "Ops o restaurante está fechado!",
-        duration: 3000,
-        close: true,
-        gravity: "top", // top or bottom
-        position: "right", // left, center or right
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-          background: "#ef4444",
-        },
-      }).showToast()
-      return;
-    } */
+  * if (!isOpen) {
+    Toastify({
+      text: "Ops o restaurante está fechado!",
+      duration: 3000,
+      close: true,
+      gravity: "top", // top or bottom
+      position: "right", // left, center or right
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "#ef4444",
+      },
+    }).showToast()
+    return;
+  }
 
   if (cart.length === 0) return;
   if (addressInput.value === "") {
@@ -205,7 +205,7 @@ checkoutBtn.addEventListener("click", function () {
 
 
 
-  const phone = "35999865637";
+  const phone = "999999999";
   window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
 
   cart = [];
