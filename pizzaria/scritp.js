@@ -9,6 +9,7 @@ const checkoutBtn = document.getElementById("checkout-btn")
 const closeModalBtn = document.getElementById("close-modal-btn")
 const cartCounter = document.getElementById("cart-count")
 const addressInput = document.getElementById("address")
+const observaçao = document.getElementById("observaçao")
 const addressWarn = document.getElementById("address-warn")
 const pizzaPrices = {
   calabresa: { pequena: 40, media: 45, grande: 50, familia: 65 },
@@ -22,11 +23,11 @@ const pizzaPrices = {
   brocoliscombacon: { pequena: 43, media: 48, grande: 55, familia: 70 },
   baconcompalmito: { pequena: 43, media: 48, grande: 55, familia: 70 },
   italiana: { pequena: 43, media: 48, grande: 55, familia: 70 },
-  doisqueijos: { pequena: 43, media: 48, grande: 55, familia: 70 },
-  tresqueijos: { pequena: 43, media: 48, grande: 55, familia: 70 },
-  quatroqueijos: { pequena: 43, media: 48, grande: 55, familia: 70 },
-  cincoqueijos: { pequena: 43, media: 48, grande: 55, familia: 70 },
-  seisqueijos: { pequena: 43, media: 48, grande: 55, familia: 70 },
+  doisqueijos: { pequena: 35, media: 40, grande: 45, familia: 55 },
+  tresqueijos: { pequena: 38, media: 43, grande: 48, familia: 60 },
+  quatroqueijos: { pequena: 40, media: 48, grande: 55, familia: 70 },
+  cincoqueijos: { pequena: 43, media: 50, grande: 58, familia: 75 },
+  seisqueijos: { pequena: 45, media: 55, grande: 70, familia: 85 },
   costela: { pequena: 45, media: 55, grande: 70, familia: 85 },
   camarao: { pequena: 45, media: 55, grande: 70, familia: 85 },
   vegana: { pequena: 40, media: 45, grande: 50, familia: 65 },
@@ -168,6 +169,9 @@ addressInput.addEventListener("input", function (event) {
   }
 })
 
+observaçao.addEventListener("input", function (evento) {
+  let observaçaoValue = event.target.value
+})
 // finalizar pedido
 
 checkoutBtn.addEventListener("click", function () {
@@ -175,20 +179,20 @@ checkoutBtn.addEventListener("click", function () {
     return `${item.name} (Qtd: ${item.quantity}) - R$ ${(item.price * item.quantity).toFixed(2)}`;
   }).join("\n");
 
-  if (!isOpen) {
-    Toastify({
-      text: "Ops o restaurante está fechado!",
-      duration: 3000,
-      close: true,
-      gravity: "top", // top or bottom
-      position: "right", // left, center or right
-      stopOnFocus: true, // Prevents dismissing of toast on hover
-      style: {
-        background: "#ef4444",
-      },
-    }).showToast()
-    return;
-  }
+   if (!isOpen) {
+   Toastify({
+     text: "Ops o restaurante está fechado!",
+     duration: 3000,
+     close: true,
+     gravity: "top", // top or bottom
+     position: "right", // left, center or right
+     stopOnFocus: true, // Prevents dismissing of toast on hover
+     style: {
+       background: "#ef4444",
+     },
+   }).showToast()
+   return;
+ } 
 
   if (cart.length === 0) return;
   if (addressInput.value === "") {
@@ -200,12 +204,12 @@ checkoutBtn.addEventListener("click", function () {
   const paymentMethod = document.getElementById("payment-method").value;
 
   const message = encodeURIComponent(
-    `*Pedido:*\n${cartItems}\n\n*Total: R$ ${total}*\n*Endereço:* ${addressInput.value}\n*Forma de Pagamento:* ${paymentMethod}`
+    `*Pedido:*\n${cartItems}\n*Observação:*\n${observaçao.value}\n\n*Total: R$ ${total}*\n*Endereço:* ${addressInput.value}\n*Forma de Pagamento:* ${paymentMethod}`
   );
 
 
 
-  const phone = "999999999";
+  const phone = "35999865637";
   window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
 
   cart = [];

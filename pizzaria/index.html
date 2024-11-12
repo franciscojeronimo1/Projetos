@@ -24,23 +24,31 @@
   <meta property="og:site_name" content="Claudai Delivery" />
 
 
-  <title>Pizzaria Delivery</title>
+  <title>Claudia Delivery</title>
 </head>
 
 <body>
   <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
     <div class="w-full h-full flex flex-col justify-center items-center">
-      <img src="./assets/pizza-1.jpg" alt="Logo DevBurguer" class="w-32 h-32
-           rounded-full shadow-lg hover:scale-110 duration-200" />
-      <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Claudia Delivery</h1>
+      <img src="./assets/pizza-1.jpg"  class="w-32 h-32
+           rounded-full shadow-lg hover:scale-110 duration-200 animate-bounce  " />
+      <h1 class="text-4xl mt-4 mb-2 font-bold text-white" >Claudia Delivery</h1>
+      
 
       <span class="text-white font-medium">
         Santana do Jacaré</span>
 
-      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-        <span class="text-white font-medium">Seg á Dom - 18:00 as 23:00</span>
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5  " id="date-span">
+        <span class="text-white font-medium ">Seg á Dom - 18:00 as 23:00</span>
+
       </div>
+
+      <h1 class="text-2xl mt-4 mb-2 font-bold text-yellow-300 animate-pulse text-center ">Compre pelo site e participe de premiações semanais</h1>
+      
+
     </div>
+
+    
   </header>
 
   <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
@@ -648,7 +656,7 @@
   <!-- pizzas prontas-->
   <div class="flex gap-2 w-full">
     <img src="./assets/pizza.png" alt="moda"
-      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 " />
 
     <div class="w-full">
       <p class="font-bold">Costela</p>
@@ -676,7 +684,7 @@
   <!-- bebidas-->
   <div class="flex gap-2 w-full">
     <img src="./assets/coca.png" alt="Coca 2L"
-      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 " />
 
     <div class="w-full">
       <p class="font-bold">Coca 2L</p>
@@ -696,7 +704,7 @@
       class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
     <div class="w-full">
-      <p class="font-bold">Kuat 2L</p>
+      <p class="font-bold ">Kuat 2L</p>
 
       <div class="flex items-center gap-2 justify-between mt-3">
         <p class="font-bold text-lg">R$ 10.00</p>
@@ -729,10 +737,10 @@
         Digite seu endereço completo!
       </p>
 
-
-      <p class="font-bold mt-4">Quer tirar alguma coisa?:</p>
-      <input type="text" placeholder="Exemplo: Tirar Cebola" id="texto"
+      <p class="font-bold mt-4">Observação:</p>
+      <input type="text" placeholder="Quer tirar algo da pizza?" id="observaçao"
         class="w-full border-2 p-1 rounded my-1" />
+
 
       <label for="payment-method" class="block font-medium mt-4">Escolha a forma de pagamento:</label>
       <select id="payment-method" class="border p-2 rounded w-full mt-2">
@@ -758,7 +766,7 @@
 
   
 
-  <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+  <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center ">
     <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
       (<span id="cart-count">0</span>) Veja meu carrinho
       <i class="fa fa-cart-plus text-lg text-white"></i>
