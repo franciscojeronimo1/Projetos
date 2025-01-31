@@ -43,8 +43,8 @@ def get_mana_position():
     global rgb
     global mana_position
 
-    messagebox.showinfo(title="Position", message="Posicione o mouse em cima da barra de vida e pressione insert")
-    keyboard.wait("insert")
+    messagebox.showinfo(title="Position", message="Posicione o mouse em cima da barra de vida que estiver baixa, onde a parte estiver sem a cor vermelha e pressione shift")
+    keyboard.wait("shift")
     x, y = pyautogui.position()
     rgb = pyautogui.screenshot().getpixel((x, y))
     messagebox.showinfo(title='Vida Result', message=f"X: {x} Y: {y} - RGB: {rgb}")
@@ -96,7 +96,7 @@ def load():
 btn_load = generate_widget(Button, row=4, column=0, text="Load", command=load)
 
 def run():
-    wai_to_eat_food = 10
+    wai_to_eat_food = 0.1
     time_food = time.time()
     while not myEvent.is_set():
         if data['mana_pos']['position'] is not None:
@@ -104,10 +104,12 @@ def run():
             y = data['mana_pos']['position'][1]
             if pyautogui.pixelMatchesColor(x, y, tuple(data['mana_pos']['rgb'])):
                 if data['spell']['value'] != 'Desligado':
-                    pyautogui.press(data['spell']['value'])
+                    if int(time.time() - time_food) >= wai_to_eat_food:
+                        pyautogui.press(data['spell']['value'])
+                        time_food = time.time()
             if data['food']['value'] != 'Desligado':
                 if int(time.time() - time_food) >= wai_to_eat_food:
-                    print('comendo food')
+                    print('usando a cada segundos')
                     pyautogui.press(data['food']['value'])
                     time_food = time.time()
     print('bot parado')
